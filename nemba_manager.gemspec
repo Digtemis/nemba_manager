@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors = ["Digtemis"]
   spec.email = ["rjanuarie94@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "Core logic for NEMBA compliance and IAV management."
+  spec.description = "A business tool for South African consultants to manage invasive species data and clearing plans."
+  spec.homepage = "https://github.com/Digtemis/nemba_manager"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
