@@ -5,7 +5,9 @@ module NembaManager
       days = NembaManager::Calculator.estimate_work_days(hectares, density)
       
       "MANAGEMENT PLAN SUMMARY:\n" +
-      "Target Species: #{plant} (Category #{info[:category]})\n" +
+      "--------------------------\n" +
+      "Target Species: #{plant} (#{info[:common]})\n" + # Added common name here
+      "NEMBA Status: Category #{info[:category]}\n" +
       "Area Size: #{hectares} Hectares\n" +
       "Infestation Density: #{density}\n" +
       "Estimated Labor: #{days} person-days required.\n" +
