@@ -1,15 +1,15 @@
 module NembaManager
   class Species
-    # A simple lookup tool for your business
-    def self.category(plant_name)
-      list = {
-        "Lantana" => "Category 1b",
-        "Pom Pom Weed" => "Category 1b",
-        "Pampas Grass" => "Category 1b",
-        "Water Hyacinth" => "Category 1a"
-      }
-      
-      list[plant_name] || "Species not found in database"
+    # Official NEMBA Categories and their required legal actions
+    DATA = {
+      "Lantana camara" => { category: "1b", action: "Control/Eradicate under management plan" },
+      "Acacia mearnsii" => { category: "2", action: "Permit required for commercial use; otherwise 1b" },
+      "Eichhornia crassipes" => { category: "1b", action: "Immediate control required (Water Hyacinth)" },
+      "Opuntia ficus-indica" => { category: "1b", action: "Control required (Sweet Prickly Pear)" }
+    }
+
+    def self.lookup(name)
+      DATA[name] || { category: "Unknown", action: "Consult NEMBA Gazettes" }
     end
   end
 end
