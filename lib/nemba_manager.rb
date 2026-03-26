@@ -1,6 +1,10 @@
 require_relative "nemba_manager/version"
 require_relative "nemba_manager/species"
 require_relative "nemba_manager/calculator"
+require_relative "nemba_manager/report" # Add this line
+require_relative "nemba_manager/version"
+require_relative "nemba_manager/species"
+require_relative "nemba_manager/calculator"
 
 module NembaManager
   class Error < StandardError; end
